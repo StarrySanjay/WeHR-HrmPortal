@@ -1,0 +1,46 @@
+.card {
+  height: 136px;
+  width: 204px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 20px;
+  padding-top: 32px;
+}
+
+.card-value {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 28px;
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+.per-month {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 106px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card {
+    width: 93%;
+  }
+}

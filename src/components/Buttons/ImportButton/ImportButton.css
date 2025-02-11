@@ -1,0 +1,29 @@
+.importBtn-wrapper {
+  height: 40px;
+  width: 156px;
+}
+
+.import-button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  color: #171717;
+  border: 1px solid #171717;
+  border-radius: 10px;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.plus-icon {
+  position: absolute;
+  z-index: 10;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  margin-right: 4px;
+}

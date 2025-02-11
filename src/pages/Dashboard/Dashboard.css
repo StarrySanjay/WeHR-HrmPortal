@@ -1,0 +1,191 @@
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 40px;
+}
+
+.left-container {
+  padding-left: 51px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout-title {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.position-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.stat-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.announcement-card {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.birthday-section {
+  position: absolute;
+  top: 534px;
+  padding-bottom: 34px;
+}
+
+.birthday-section>h2 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 18px
+}
+
+.bday-cards {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+}
+
+.dash-calendar {
+  margin-top: 35px;
+}
+
+.dash-calendar>h2 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+  }
+
+  .position-cards,
+  .stat-cards,
+  .announcement-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .left-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .birthday-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    width: 93%;
+  }
+
+  .birthday-section>h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bday-cards {
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    width: 98%;
+  }
+
+  .dash-calendar {
+    margin-top: 25px;
+  }
+
+  .dash-calendar>h2 {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .announcement-container {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .dashboard-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .layout-title {
+    margin-left: 23px;
+  }
+
+  .position-cards,
+  .stat-cards,
+  .announcement-card {
+    width: 94%;
+    margin-left: 20px;
+  }
+
+  .left-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .right-container {
+    position: relative;
+    padding: 10px;
+  }
+
+  .birthday-section {
+    position: relative;
+    top: auto;
+    width: 95%;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+
+  .bday-cards {
+    width: 100%;
+    overflow-x: auto;
+    gap: 15px;
+    width: 93%;
+  }
+
+
+  .dash-calendar {
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+
+  .announcement-container {
+    width: 100%;
+  }
+
+  .birthdayCard-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.employee-wrapper {
+  padding-left: 51px;
+}
+
+.infoBox-container {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+
+.layout-title {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  margin-top: 21px;
+}

@@ -1,0 +1,184 @@
+.signIn-page {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 768px;
+    font-family: "Poppins", serif;
+}
+
+.left-wrapper {
+    max-width: 668px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 328px;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-wrapper>h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #393939;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 20px;
+    height: 48px;
+}
+
+.signIn-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+    height: 440px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 68px;
+    top: 228px;
+    border: 1px solid none;
+
+}
+
+.signIn-wrapper>h1 {
+    font-size: 62px;
+    font-weight: 700px;
+    line-height: 93px;
+    color: #393939;
+}
+
+.signIn-wrapper>h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 45px;
+    color: #393939;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 40px;
+}
+
+.input-container>input {
+    width: 100%;
+    padding-left: 46px;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.input-container>.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 16px;
+    width: 16px;
+    transform: translateY(-50%);
+}
+
+.input-container>input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #203060 !important;
+}
+
+.checkbox-container {
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 40px;
+    color: #666666;
+}
+
+.checkbox-container>input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    height: 16px;
+    width: 16px;
+}
+
+.checkbox-container>span {
+    margin-left: 10px;
+}
+
+.checkbox-container>input:checked {
+    background-color: #E9374A;
+    border-color: #E9374A;
+    color: #FFFFFF;
+}
+
+
+
+.checkbox-container>input:checked::after {
+    content: '✓';
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.checkbox-container>input::before {
+    content: '✓';
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+}
+
+.signIn-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #E9374A;
+    margin-top: 50px;
+    height: 38px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+}
+
+.right-wrapper {
+    width: 768px;
+    top: -40px;
+    left: 612px;
+}
+
+
+@media screen and (max-width:768px) {
+    .signIn-page {
+        flex-direction: column;
+    }
+
+    .right-wrapper {
+        display: none;
+    }
+
+    .left-wrapper {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+.info-box {
+    width: 157px;
+    height: 157px;
+    border: 1px solid #E1DFDF;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box:hover {
+    border-color: #E9374A;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-box .info-name {
+    font-family: "Roboto", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.79px;
+    color: #373737;
+    width: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+
+}
+
+.info-box .info-name:hover {
+    color: #E9374A;
+}

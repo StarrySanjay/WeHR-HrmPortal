@@ -1,0 +1,141 @@
+.calendar-container {
+  width: 394px;
+  height: 375px;
+  margin: auto;
+  margin-top: 12px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.calendar-container h2 {
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 4px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-header span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  gap: 3px;
+}
+
+.weekdays {
+  height: 50px;
+}
+
+.weekday {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #6a6a6a;
+  padding: 5px 0;
+  margin-top: 19px;
+}
+
+.day {
+  padding: 10px 0;
+  width: 37px;
+  margin: 4px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  color: #6d6f71;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.day:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.selected {
+  background-color: #397ffe;
+  color: #ffffff;
+}
+
+.selected-festival {
+  background: linear-gradient(135deg, #ff8c56, #ffb215);
+  border-radius: 50%;
+  height: 20px;
+  width: 39px;
+  color: #ffffff;
+}
+
+.prev-month,
+.next-month {
+  color: #bdc3c7;
+}
+
+.festival-info {
+  margin-top: 10px;
+  background-color: #fef5e7;
+  color: #d35400;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 138px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width:390px) {
+  .calendar-container {
+    margin-left: 24%;
+  }
+}

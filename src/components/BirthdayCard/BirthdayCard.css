@@ -1,0 +1,58 @@
+.birthdayCard-wrapper {
+  width: 201px;
+  height: 204px;
+  border: 1px solid #eaecee;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-img {
+  height: 80px;
+  width: 80px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.dobText-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.person-name {
+  font-family: "DM Sans", serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #242d35;
+  margin-top: 4px;
+}
+
+.designation,
+.person-dob {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4f5b67;
+  margin-top: 2px;
+}
+
+
+@media screen and (max-width:390px) {
+  .birthdayCard-wrapper{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .birthdayCard-wrapper{
+    width: 100%;
+  }
+}

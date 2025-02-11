@@ -1,0 +1,27 @@
+.leaveRequest-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    margin-left: 51px;
+    margin-top: 25px;
+}
+
+.leave-details {
+    margin-top: 28px;
+}
+
+
+@media screen and (max-width:768px) {
+    .leave-cards {
+        width: 85%;
+        flex-direction: column;
+
+
+    }
+}

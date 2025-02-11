@@ -1,0 +1,90 @@
+.sidebar-wrapper {
+    background-color: #F6F6F6;
+    width: 242px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 39px;
+    min-width: 242px;
+}
+
+
+.Logo {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: 57px;
+    margin-right: 57px;
+    color: #000000;
+}
+
+.first-menu {
+    height: 374px;
+    top: 93px;
+    position: absolute;
+    width: 100%;
+}
+
+ul {
+    margin-top: 38px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.menu-items {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.menu-items a {
+    text-decoration: none;
+}
+
+.navlink-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navlink-content>span {
+    margin-left: 24px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    color: #686868;
+}
+
+.navlink-content>span:hover {
+    color: #E9374A;
+}
+
+.menu-items a.active .navlink-content>span {
+    color: #E9374A;
+}
+
+.navlink-content>img {
+    width: 24px;
+    height: 24px;
+}
+
+.other-items {
+    color: #686868;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Roboto", serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}

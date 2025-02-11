@@ -1,0 +1,245 @@
+.attendanceList-wrapper {
+  padding-right: 54px;
+}
+
+.emp-table {
+  width: 1106px;
+  background-color: #FFFFFF;
+  border: 1px solid #EFF0F6;
+  border-radius: 8px;
+  margin-top: 5px;
+  position: relative;
+  margin-left: 38px;
+}
+
+.fixed-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  padding-left: 27px;
+  padding-right: 24px;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.table-header h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #2f2f2f;
+}
+
+.table-header button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-header button:hover {
+  background-color: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 22px;
+}
+
+
+
+
+.theader {
+  background-color: #eff0f6;
+  width: 125px;
+  height: 27px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: #4f5e74;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 20px;
+}
+
+.label {
+  margin-left: 12px;
+}
+
+.label-icon {
+  margin-right: 6px;
+}
+
+.label-options {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #808080;
+}
+
+.option-icon {
+  color: #828282;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  padding-left: 29px;
+}
+
+.emp-id,
+.emp-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.emp-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: #70768c;
+}
+
+.emp-email {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #70768c;
+}
+
+.name-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.select-radio {
+  padding-left: 24px;
+}
+
+.emp-radio {
+  width: 16px;
+  height: 16px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 126px;
+  margin-top: 5px;
+  z-index: 1000;
+}
+
+.dropdown div {
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  background-color: #EFF0F6;
+
+}
+
+.dropdown div:hover {
+  background-color: #E9374A;
+  color: #FFFFFF;
+}
+
+
+.dropdown div:active {
+  background-color: #E9374A;
+  color: #FFFFFF;
+}
+
+.emp-text.status {
+  background-color: #eff0f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emp-text.designation {
+  background-color: #eff0f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .emp-table {
+    padding: 10px;
+    margin-left: 6%;
+    width: 80%;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .table-header h2 {
+    font-size: 20px;
+  }
+
+  .theader {
+    width: auto;
+  }
+
+  .dropdown {
+    width: 120px;
+  }
+
+  .emp-text.status,
+  .emp-text.designation {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
